@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERIES EN JS</title>
+</head>
+<body>
+    <div><h1>SERIE DE TRIBONACCI</h1>
+        <script>
+            function tribonacci(numero) {
+                let numeros = [0, 0, 1];
+                for (let i = 3; i < numero; i++) {
+                    numeros[i] = numeros[i - 3] + numeros[i - 2] + numeros[i - 1];
+                }
+                return numeros;
+            }
+
+            // Ejecutado la funcion y mostrandolo en pantalla 
+            // la serie mostrara los 20 primeros terminos de la sucecion ...
+            document.write(tribonacci(20)); // 0,0,1,1,2,4,7,13,24,44,81,149,274,504,927,1705,3136,5768,10609,19513
+        </script>
+    </div>
+</body>
+
+</html>
